@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#4A035F"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Career Title Text -->
+            <TextView
+                android:id="@+id/careerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Career Title"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nova_flat"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Career Image -->
+            <ImageView
+                android:id="@+id/careerImage"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/fashion" />
+
+            <!-- Career Description -->
+            <TextView
+                android:id="@+id/careerDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is a description of the career."
+                android:textColor="#E0E0E0"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:fontFamily="@font/nova_flat"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Career Fun Fact -->
+            <TextView
+                android:id="@+id/careerFact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✨ Fun Fact: This job lets you travel the world!"
+                android:textColor="#BB86FC"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:fontFamily="@font/nova_flat"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Try Another Career Button -->
+            <Button
+                android:id="@+id/tryAgainBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Try Another Career?"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#A445BD"
+                android:fontFamily="@font/nova_flat"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Close Button -->
+            <Button
+                android:id="@+id/closeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#62379B"
+                android:fontFamily="@font/nova_flat" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

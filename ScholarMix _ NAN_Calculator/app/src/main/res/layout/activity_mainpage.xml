@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".splash_screen">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Top label asking user to select a subject -->
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/nova_flat"
+        android:text="Choose your subject"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Bottom label asking user to select their personality type -->
+    <TextView
+        android:id="@+id/personality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="@font/nova_flat"
+        android:text="Personality Type"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Business Planet (Center) -->
+    <ImageView
+        android:id="@+id/business"
+        android:layout_width="97dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/business"
+        app:layout_constraintBottom_toTopOf="@id/empathic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subject"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Science Planet (Top-Left) -->
+    <ImageView
+        android:id="@+id/science"
+        android:layout_width="95dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/science"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subject" />
+
+    <!-- Art Planet (Top-Right) -->
+    <ImageView
+        android:id="@+id/art"
+        android:layout_width="97dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/art"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subject" />
+
+    <!-- Analytical Planet (Bottom-Left) -->
+    <ImageView
+        android:id="@+id/analytical"
+        android:layout_width="98dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="92dp"
+        android:src="@drawable/analytical"
+        app:layout_constraintBottom_toTopOf="@id/personality"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Empathic Planet (Bottom-Center) -->
+    <ImageView
+        android:id="@+id/empathic"
+        android:layout_width="132dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/empathic"
+        app:layout_constraintBottom_toTopOf="@id/personality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Creative Planet (Bottom-Right) -->
+    <ImageView
+        android:id="@+id/creative"
+        android:layout_width="95dp"
+        android:layout_height="104dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="92dp"
+        android:src="@drawable/creative"
+        app:layout_constraintBottom_toTopOf="@id/personality"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Info button at top-right corner to show instructions -->
+    <ImageButton
+        android:id="@+id/instructButton"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#E9CEF6"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/i_button" />
+
+    <!-- MIX button in the center to show career suggestion -->
+    <Button
+        android:id="@+id/mixButton"
+        android:layout_width="104dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/audiowide"
+        android:text="MIX"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/empathic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/business"
+        app:layout_constraintVertical_bias="0.405" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#66000000">
+
+    <!-- Instruction Box -->
+    <LinearLayout
+        android:id="@+id/instruction_box"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/instruction_card_bg"
+        android:elevation="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/instruction_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/nova_flat"
+            android:text="How ScholarMix Works"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Instruction Text -->
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nova_flat"
+            android:gravity="center"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="8dp"
+            android:text="• Choose only one subject from the planets at the top.\n\n• Pick just one personality type from the planets below.\n\n• Tap the 'Mix' button in the center to reveal a career match.\n\n• ScholarMix blends your interest and personality to suggest the perfect career path.\n\n🚀 Let the mix begin!"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Close Button -->
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#800880"
+            android:fontFamily="@font/nova_flat"
+            android:text="Close"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>
