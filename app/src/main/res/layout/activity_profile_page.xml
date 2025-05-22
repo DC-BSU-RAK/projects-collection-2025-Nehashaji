@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5DCC0"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image-->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/profile"
+            android:contentDescription="Profile Picture"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="24dp"
+            android:elevation="6dp"
+            android:outlineProvider="background"
+            android:clipToOutline="true" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="#2B2B2B"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cinzel"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user@example.com"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            android:fontFamily="@font/cinzel"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="240dp"
+            android:layout_height="2dp"
+            android:background="#2C6E63"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Info Items Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:layout_marginBottom="28dp">
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textColor="#2C6E63"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/cinzel" />
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="********"
+                android:textColor="#2B2B2B"
+                android:textSize="18sp"
+                android:fontFamily="@font/cinzel"
+                android:layout_marginBottom="22dp" />
+
+            <!-- Phone Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"
+                android:textColor="#2C6E63"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/cinzel" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1 234 567 890"
+                android:textColor="#2B2B2B"
+                android:textSize="18sp"
+                android:fontFamily="@font/cinzel"
+                android:layout_marginBottom="22dp" />
+
+            <!-- Member Since -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member Since:"
+                android:textColor="#2C6E63"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/cinzel" />
+
+            <TextView
+                android:id="@+id/tvMemberSince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="January 2025"
+                android:textColor="#2B2B2B"
+                android:textSize="18sp"
+                android:fontFamily="@font/cinzel" />
+
+        </LinearLayout>
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Edit Profile"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:backgroundTint="#1D4F49"
+            android:textSize="18sp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/cinzel" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#1D4F49"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:fontFamily="@font/cinzel" />
+
+    </LinearLayout>
+</ScrollView>

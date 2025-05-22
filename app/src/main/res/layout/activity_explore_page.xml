@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exploreScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F1EB"
+    android:padding="16dp"
+    tools:context=".ExplorePage">
+
+  <LinearLayout
+      android:id="@+id/countryList"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <!-- US Card -->
+
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/usa" style="@style/CountryImage" android:contentDescription="USA"/>
+      <TextView android:text="United States" style="@style/CountryTitle"/>
+      <TextView android:text="A land of dreams, innovation and cultural influence." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreUSA" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- UAE Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView
+          style="@style/CountryImage"
+          android:contentDescription="UAE"
+          android:src="@drawable/uae" />
+
+      <TextView android:text="United Arab Emirates" style="@style/CountryTitle"/>
+      <TextView android:text="A futuristic land of culture, skyline, and desert soul." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreUAE" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- CANADA Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/canada" style="@style/CountryImage" android:contentDescription="Canada"/>
+      <TextView android:text="Canada" style="@style/CountryTitle"/>
+      <TextView android:text="A nation of breathtaking nature, peace, and diversity." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreCanada" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- India Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/india" style="@style/CountryImage" android:contentDescription="India"/>
+      <TextView android:text="India" style="@style/CountryTitle"/>
+      <TextView android:text="Rich in history, color, spirituality, and unity in diversity." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreIndia" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- Japan Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/japan" style="@style/CountryImage" android:contentDescription="Japan"/>
+      <TextView android:text="Japan" style="@style/CountryTitle"/>
+      <TextView android:text="Where tradition meets technology and timeless beauty." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreJapan" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- Australia Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/australia" style="@style/CountryImage" android:contentDescription="Australia"/>
+      <TextView android:text="Australia" style="@style/CountryTitle"/>
+      <TextView android:text="Sun-kissed beaches, nature, and a laid-back lifestyle." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreAustralia" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- UK Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/uk" style="@style/CountryImage" android:contentDescription="UK"/>
+      <TextView android:text="United Kingdom" style="@style/CountryTitle"/>
+      <TextView android:text="Home to royalty, history, culture and innovation." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreUK" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- Egypt Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/egypt" style="@style/CountryImage" android:contentDescription="Egypt"/>
+      <TextView android:text="Egypt" style="@style/CountryTitle"/>
+      <TextView android:text="Timeless pyramids, ancient mysteries and desert magic." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreEgypt" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- Philippines Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/philippines" style="@style/CountryImage" android:contentDescription="Philippines"/>
+      <TextView android:text="Philippines" style="@style/CountryTitle"/>
+      <TextView android:text="Tropical paradise with warm smiles and crystal waters." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMorePhilippines" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+    <!-- Brazil Card -->
+    <LinearLayout style="@style/CountryBlock">
+      <ImageView android:src="@drawable/brazil" style="@style/CountryImage" android:contentDescription="Brazil"/>
+      <TextView android:text="Brazil" style="@style/CountryTitle"/>
+      <TextView android:text="Samba, forests, football and vibrant culture." style="@style/CountryInfo"/>
+      <Button android:id="@+id/viewMoreBrazil" android:text="View More" style="@style/ViewMoreBtn"/>
+    </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>
